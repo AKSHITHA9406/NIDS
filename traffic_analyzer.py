@@ -23,7 +23,7 @@ if packet_rate>100:
     print("high traffic rate detected! possible anamoly")
 
 top_ip=df["src_ip"].value_counts().idxmax()
-top_ip_count=df["src_ip"].value_count().max()
+top_ip_count=df["src_ip"].value_counts().max()
 
 if top_ip_count>len(df)*0.7:
-    print("oen IP dominating traffic:",top_ip)
+    print("one IP dominating traffic:",top_ip)
